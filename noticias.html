@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Municipalidad de Miraflores</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="pagina-noticias">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="utility">
+        <div class="container d-flex justify-content-between flex-wrap gap-2">
+            <span><i class="bi bi-geo-alt-fill"></i> Municipalidad Distrital de Miraflores</span>
+            <span><i class="bi bi-telephone-fill"></i> (01) 755-0099</span>
+        </div>
+    </div>
+
+    <!-- MENÚ -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+                     <span class="brand-symbol">
+                    <img src="imagenes/logo.jpg" alt="Logo de Miraflores">
+                </span>
+
+                <span class="brand-copy">
+                    MIRAFLORES
+                    <small>Municipalidad Distrital</small>
+                </span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="municipalidad.html">Municipalidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ciudad.html">Ciudad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autoridades.html">Autoridades</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="noticias.html">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- BANNER CON IMAGEN Y TEXTO CENTRADO -->
+        <section class="noticias-banner">
+            <div class="noticias-banner-contenido">
+                <span>MUNICIPALIDAD DISTRITAL DE MIRAFLORES</span>
+                <h1>Todas las noticias</h1>
+                <p>
+                    Infórmate sobre las últimas actividades, proyectos
+                    y acontecimientos de nuestro distrito.
+                </p>
+            </div>
+        </section>
+
+        <!-- MIGAS DE PAN -->
+        <div class="noticias-ruta">
+            <div class="container">
+                <a href="index.html">
+                    <i class="bi bi-house-door"></i> Inicio
+                </a>
+                <i class="bi bi-chevron-right mx-2"></i>
+                <span>Noticias</span>
+            </div>
+        </div>
+
+        <!-- CONTENIDO -->
+        <section class="noticias-seccion">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="noticias-etiqueta">ACTUALIDAD MUNICIPAL</span>
+                    <h2 class="noticias-titulo">Últimas noticias</h2>
+                    <p class="noticias-descripcion">
+                        Conoce las actividades y acciones que realiza
+                        la Municipalidad de Miraflores.
+                    </p>
+                </div>
+
+                <!-- BUSCADOR -->
+                <div class="noticias-herramientas">
+                    <div class="noticias-buscador">
+                        <i class="bi bi-search"></i>
+                        <input
+                            type="search"
+                            id="buscarNoticias"
+                            placeholder="Buscar noticias..."
+                            aria-label="Buscar noticias">
+                    </div>
+
+                    <span id="contadorNoticias">9 noticias disponibles</span>
+                </div>
+
+                <!-- TARJETAS -->
+                <div class="row g-4" id="listaNoticias">
+
+                    <!-- 1 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Diseno-sin-titulo-37-481x254.jpg"
+                                alt="Procesión del Señor de los Milagros"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 23/10/2026
+                                </span>
+
+                                <h3>
+                                    Niños del Nido Municipal Santa Cruz recorrieron
+                                    Miraflores en procesión del Señor de los Milagros
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/ninos-del-nido-municipal-santa-cruz-recorrieron-miraflores-en-procesion-del-senor-de-los-milagros/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 2 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Codisec-19-10-P-481x254.jpg"
+                                alt="Tecnología para la seguridad municipal"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 19/10/2026
+                                </span>
+
+                                <h3>
+                                    Miraflores implementa nube privada municipal
+                                    para resguardar datos de la IA y mejorar
+                                    la seguridad ciudadana
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/miraflores-implementa-nube-privada-municipal-para-resguardar-datos-de-la-ia-y-mejorar-la-seguridad-ciudadana/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 3 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Robo-Casimiro-P-481x254.jpg"
+                                alt="Intervención de serenazgo"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 19/10/2026
+                                </span>
+
+                                <h3>
+                                    Serenos intervienen en tiempo récord
+                                    a vigilantes del hospital Casimiro Ulloa
+                                    que robaron moto a paciente
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/serenos-intervienen-en-tiempo-record-a-trabajadores-de-hospital-casimiro-ulloa-que-robaron-moto-a-paciente/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Diseno-sin-titulo-49-481x254.png"
+                                alt="Certificación sanitaria de restaurantes"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 16/10/2026
+                                </span>
+
+                                <h3>
+                                    Miraflores obtiene el tercer puesto a nivel
+                                    nacional por su labor en certificación
+                                    sanitaria de restaurantes
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/miraflores-obtiene-el-tercer-puesto-a-nivel-nacional-por-su-labor-en-certificacion-sanitaria-de-restaurantes/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 5 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Diseno-sin-titulo-48-481x254.png"
+                                alt="Ginkana inclusiva en Miraflores"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 15/10/2026
+                                </span>
+
+                                <h3>
+                                    Personas con discapacidad y sus familias
+                                    disfrutaron de una ginkana inclusiva
+                                    en Miraflores
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/personas-con-discapacidad-y-sus-familias-disfrutaron-de-una-ginkana-inclusiva-en-miraflores/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 6 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/CCC-14-10-P-481x254.jpg"
+                                alt="Jornada de atención vecinal"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 14/10/2026
+                                </span>
+
+                                <h3>
+                                    Alcalde Carlos Canales recibió a residentes
+                                    en nueva jornada de atención vecinal
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/alcalde-carlos-canales-recibio-a-residentes-en-nueva-jornada-de-atencion-vecinal/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 7 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/portada-481x254.png"
+                                alt="Inspecciones sanitarias"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 14/10/2026
+                                </span>
+
+                                <h3>
+                                    Miraflores avanza con las inspecciones
+                                    sanitarias a 93 establecimientos que buscan
+                                    obtener certificación saludable
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/miraflores-avanza-con-las-inspecciones-sanitarias-a-93-establecimientos-que-buscan-obtener-certificacion-saludable/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 8 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img src="imagenes/gatitos.jpg"
+
+                                alt="Adopción responsable de gatitos"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 14/10/2026
+                                </span>
+
+                                <h3>
+                                    Miraflores promovió la adopción responsable
+                                    de gatitos con una jornada de pilates
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/miraflores-promovio-la-adopcion-responsable-de-gatitos-con-una-jornada-de-pilates/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 9 -->
+                    <div class="col-md-6 col-lg-4 noticia-item">
+                        <article class="noticia-card">
+                            <img
+                                src="https://www.miraflores.gob.pe/wp-content/uploads/2026/10/Simulacro-Noche-14-10-I-481x254.jpg"
+                                alt="Simulacro Nacional Multipeligro"
+                                loading="lazy">
+
+                            <div class="noticia-contenido">
+                                <span class="noticia-fecha">
+                                    <i class="bi bi-calendar3"></i> 13/10/2026
+                                </span>
+
+                                <h3>
+                                    Miraflores refuerza su preparación ante
+                                    emergencias con el III Simulacro Nacional
+                                    Multipeligro
+                                </h3>
+
+                                <a href="https://www.miraflores.gob.pe/miraflores-refuerza-su-preparacion-ante-emergencias-con-el-iii-simulacro-nacional-multipeligro/"
+                                   target="_blank" rel="noopener noreferrer">
+                                    Leer noticia <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <!-- SIN RESULTADOS -->
+                <div id="sinNoticias" class="noticias-vacio" hidden>
+                    <i class="bi bi-search"></i>
+                    <h3>No se encontraron noticias</h3>
+                    <p>Intenta buscar con otra palabra.</p>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="https://www.miraflores.gob.pe/todas-las-noticias/"
+                       class="noticias-boton"
+                       target="_blank" rel="noopener noreferrer">
+                        Ver más noticias oficiales
+                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BLOQUE FINAL -->
+        <section class="noticias-cta">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span>COMUNICACIÓN MUNICIPAL</span>
+                        <h2>Mantente informado sobre Miraflores</h2>
+                        <p>
+                            Descubre las novedades y actividades
+                            que se desarrollan en nuestro distrito.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="contacto.html" class="noticias-cta-boton">
+                            Contáctanos <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <div class="col-md-5">
+                    <h4>Municipalidad de Miraflores</h4>
+                    <p>
+                        Comprometidos con el bienestar de nuestros
+                        vecinos y el desarrollo de la ciudad.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Enlaces rápidos</h4>
+                    <p><a href="municipalidad.html">Municipalidad</a></p>
+                    <p><a href="servicios.html">Servicios</a></p>
+                    <p><a href="noticias.html">Noticias</a></p>
+                    <p><a href="contacto.html">Contacto</a></p>
+                </div>
+
+                <div class="col-md-3">
+                    <h4>Síguenos</h4>
+
+                    <div class="d-flex gap-3 fs-4">
+                        <a href="https://www.facebook.com/MunicipalidaddeMiraflores/"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/munimiraflores/"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UC8FiOrR4JKMX1gbFTcCqlqA"
+                           target="_blank" rel="noopener noreferrer"
+                           aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="my-4">
+
+            <p class="text-center mb-0">
+                © 2026 Municipalidad Distrital de Miraflores.
+                Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <button id="backTop" type="button" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- BUSCADOR DE NOTICIAS -->
+    <script>
+        const buscador = document.getElementById("buscarNoticias");
+        const noticias = document.querySelectorAll(".noticia-item");
+        const contador = document.getElementById("contadorNoticias");
+        const mensajeVacio = document.getElementById("sinNoticias");
+
+        function normalizar(texto) {
+            return texto
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
+        }
+
+        buscador.addEventListener("input", function () {
+            const busqueda = normalizar(this.value.trim());
+            let visibles = 0;
+
+            noticias.forEach(function (noticia) {
+                const texto = normalizar(noticia.textContent);
+                const coincide = texto.includes(busqueda);
+
+                noticia.hidden = !coincide;
+
+                if (coincide) {
+                    visibles++;
+                }
+            });
+
+            contador.textContent =
+                visibles + (visibles === 1
+                    ? " noticia disponible"
+                    : " noticias disponibles");
+
+            mensajeVacio.hidden = visibles !== 0;
+        });
+    </script>
+
+</body>
+</html>
